@@ -14,7 +14,6 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/views',
 ));
 
-
 // $app->get('/estilo', function () use ($db, $app) {
 //     return new Response(implode(',', $cervejas['estilos']), 200);
 // });
