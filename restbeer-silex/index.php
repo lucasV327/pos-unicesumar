@@ -19,6 +19,8 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 //     return new Response(implode(',', $cervejas['estilos']), 200);
 // });
 
+//CERVAJA BIRL
+
 $app->get('/cerveja', function () use ($db, $app) {
     $stmt = $db->prepare('select name,style from beer');
     $stmt->execute();
